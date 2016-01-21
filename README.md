@@ -1,2 +1,2 @@
 # baner
-baner reklamowy
+Baner przygotowany na serwis podlasie24.pl

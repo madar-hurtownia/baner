@@ -1,0 +1,171 @@
+.baner {
+  width: 750px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.baner .baner-slider {
+  margin: 0;
+  padding: 0;
+  width: 750px;
+  height: 150px;
+}
+
+.baner .baner-slider ul.baner-slider-list {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  width: 450px;
+  height: 150px;
+  position: fixed;
+  z-index: -1;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.baner .baner-slider ul.baner-slider-list li {
+  position: absolute;
+  width: 450px;
+  height: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  -webkit-animation: image 30s linear infinite;
+          animation: image 30s linear infinite;
+}
+
+.baner .baner-slider ul.baner-slider-list li:nth-child(1) {
+  background-image: url(../img/pic3.jpg);
+}
+
+.baner .baner-slider ul.baner-slider-list li:nth-child(2) {
+  background-image: url(../img/pic1.jpg);
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.baner .baner-slider ul.baner-slider-list li:nth-child(3) {
+  background-image: url(../img/pic4.jpg);
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.baner .baner-slider ul.baner-slider-list li:nth-child(4) {
+  background-image: url(../img/pic2.jpg);
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.baner .baner-slider ul.baner-slider-list li:nth-child(5) {
+  background-image: url(../img/pic5.jpg);
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.baner .baner-slider a.baner-text {
+  float: right;
+  width: 300px;
+  height: 150px;
+  background: -webkit-linear-gradient(294deg, #fdf21c, #cf030d);
+  background: linear-gradient(156deg, #fdf21c, #cf030d);
+  background-size: 150% 150%;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: 'fira sans', sans-serif;
+  font-weight: 700;
+  -webkit-animation: animate 8s cubic-bezier(0.25, 0.64, 0.42, 0.87) infinite;
+          animation: animate 8s cubic-bezier(0.25, 0.64, 0.42, 0.87) infinite;
+}
+
+.baner .baner-slider a.baner-text .baner-text-logo {
+  text-align: right;
+  width: 100px;
+  margin: 5px 0 0 5px;
+}
+
+.baner .baner-slider a.baner-text p.baner-text-hurt {
+  font-size: 12px;
+  margin: 0 0 5px 10px;
+}
+
+@-webkit-keyframes image {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(2) rotate(-25deg);
+            transform: scale(2) rotate(-25deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes image {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(2) rotate(-25deg);
+            transform: scale(2) rotate(-25deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}

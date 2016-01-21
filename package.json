@@ -1,0 +1,31 @@
+{
+  "name": "baner",
+  "version": "1.0.0",
+  "description": "baner reklamowy na portal podlasie 24",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madar-hurtownia/baner.git"
+  },
+  "keywords": [
+    "baner",
+    "reklama"
+  ],
+  "author": "ubikCode <ubik@ubikcode.com http://www.ubikcode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madar-hurtownia/baner/issues"
+  },
+  "homepage": "https://github.com/madar-hurtownia/baner#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.1"
+  }
+}
